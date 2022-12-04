@@ -45,6 +45,7 @@ export default function MeetingModal({
         // eslint-disable-next-line react/jsx-no-bind
         style={customStyles}
         contentLabel="Confirm meeting"
+        ariaHideApp={false}
       >
         <h2>Please confirm meeting</h2>
         <div>
