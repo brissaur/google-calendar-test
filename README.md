@@ -2,4 +2,5 @@
 
 ## Installation
 
+- install & envs
 ## Getting started

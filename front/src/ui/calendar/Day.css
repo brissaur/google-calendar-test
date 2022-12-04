@@ -3,3 +3,7 @@
     height:50px;
     border: 1px solid;
 }
+
+.hour.selected {
+    background-color: blue;
+}
