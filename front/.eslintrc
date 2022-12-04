@@ -1,7 +1,7 @@
 {
   "extends": ["airbnb", "airbnb-typescript"],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./front/tsconfig.json"
   },
   "rules": {
     // not needed in react 16+

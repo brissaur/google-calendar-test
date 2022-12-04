@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./Day.css";
+import { useState } from 'react';
+import './Day.css';
 
 const hours = Array.from({ length: 24 }).map((_, index) => index);
 
