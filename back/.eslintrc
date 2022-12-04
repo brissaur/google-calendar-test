@@ -1,3 +1,6 @@
 {
-  "extends": "airbnb-base"
+  "extends": ["airbnb-base", "airbnb-typescript/base"],
+  "parserOptions": {
+    "project": "./back/tsconfig.json"
+  }
 }
