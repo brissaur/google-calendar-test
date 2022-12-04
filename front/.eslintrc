@@ -1,5 +1,8 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb", "airbnb-typescript"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "rules": {
     // not needed in react 16+
     "react/react-in-jsx-scope": 0,
