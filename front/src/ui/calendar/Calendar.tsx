@@ -1,4 +1,5 @@
 import "./Calendar.css";
+import Day from "./Day";
 
 interface Props {}
 
@@ -11,24 +12,19 @@ const DAYS = [
   { display: "Friday 9", dayNumber: 9 },
 ];
 
-const hours = Array.from({ length: 24 }).map((_, index) => index);
-function Day({ title }: { title: string }) {
-  return (
-    <div>
-      {title}
-      {hours.map((hour) => (
-        <div key={hour} className="hour">{hour}</div>
-      ))}
-    </div>
-  );
-}
-
 export default function Calendar(props: Props) {
   console.log(props);
   return (
     <div className="calendar">
       {DAYS.map(({ display, dayNumber }) => (
-        <Day key={dayNumber} title={display} />
+        <Day
+          key={dayNumber}
+          title={display}
+          onHoursDragAndDrop={(res) => {
+            console.log(res);
+            return Promise.resolve();
+          }}
+        />
       ))}
     </div>
   );
